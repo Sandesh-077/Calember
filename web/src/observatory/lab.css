@@ -192,3 +192,18 @@
   .rk-cat i, .ranks-chk { display: none; }
 }
 .ranks-prov { margin: -4px 0 8px; font: 11px var(--mono); color: #c9b6ff; }
+
+/* About: the detailed method */
+.about h3 { display: flex; align-items: center; gap: 10px; margin: 20px 0 6px; font: 600 14.5px var(--sans); color: var(--ink); }
+.about h3 span { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 6px; font: 600 11px var(--mono); color: #1a0f04; background: linear-gradient(135deg, #ffd08a, #ffa64d); flex: none; }
+.about #method { scroll-margin-top: 12px; padding-top: 14px; border-top: 1px solid var(--line); margin-top: 28px; }
+.about code { font: 12px var(--mono); color: #ffe3bd; background: rgba(255, 255, 255, 0.05); padding: 1px 5px; border-radius: 4px; }
+.m-scroll { max-width: 860px; overflow-x: auto; margin: 10px 0 4px; }
+.m-table { width: 100%; border-collapse: collapse; font-size: 13px; color: var(--ink-2); }
+.m-table th { text-align: left; font: 500 10.5px var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); padding: 6px 10px; border-bottom: 1px solid var(--line-2); }
+.m-table td { padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; line-height: 1.45; }
+.m-table td:first-child { white-space: nowrap; color: var(--ink); }
+.team-line { margin-top: 10px; font-size: 13.5px; }
+.method-link { margin: 6px 0 4px; font-size: 13px; }
+.method-link a { color: var(--ember); text-decoration: none; border-bottom: 1px solid rgba(255, 179, 71, 0.4); }
+.method-link a:hover { border-bottom-color: var(--ember); }

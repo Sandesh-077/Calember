@@ -199,6 +199,9 @@ function Skill({ v }: { v: ValidationReport }) {
         <p className="legend-line">
           <span className="sw b2" /> unseen regions and years (2018–19) <span className="sw b3" /> sealed 2020 test, run once
         </p>
+        <p className="method-link">
+          <a href="#/about?go=method">How we did it: the full harmonization method, step by step →</a>
+        </p>
         <p className="fine">Axis starts at 0.90 (broken axis). The headline 2020 score keeps Aqua's Aug 2020 data loss in; the second number removes those months after the fact: {String((v.holdout_2020.excluding_aqua_outage as { note: string }).note)}.</p>
       </div>
     </Exhibit>
