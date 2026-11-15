@@ -9,6 +9,16 @@
     <meta name="theme-color" content="#05070d" />
     <meta name="description" content="Calember: the fire memory that outlives its satellites. A harmonized MODIS and VIIRS hotspot record, 2000 to now." />
     <title>Calember · the story</title>
+    <style>
+      /* the interface at 90 % on desktop screens, like the Observatory; the 3D canvas (with its labels) and the scroll
+         length stay at full scale, so the film looks and scrolls as it does at 90 % browser zoom */
+      :root { --unzoom: 1; }
+      @media (min-width: 1100px) and (min-height: 600px) and (pointer: fine) {
+        html { zoom: 0.9; }
+        :root { --unzoom: 1.1111111; }
+      }
+      .film-canvas, .scroll-track { zoom: var(--unzoom); }
+    </style>
   </head>
   <body>
     <div id="root"></div>
